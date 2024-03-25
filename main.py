@@ -22,8 +22,13 @@ def exit():
 def go(): 
     AI.load(exit, config["mode"])
 
+# Создаем потоки
+
 exit = threading.Thread(target = exit)
 go = threading.Thread(target = go)
+
+# Запускаем 
+
 if __name__ == '__main__':
     exit.start()
     go.start()

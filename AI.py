@@ -16,8 +16,6 @@ def load(exit, mode):
 
     
     mon = {"top": 0, "left": 0, "width": 1920, "height": 1080}
-    
-    title = "AI"
     sct = mss.mss()
 
 
@@ -45,7 +43,8 @@ def load(exit, mode):
         mask = cv2.inRange(hsv, lower, upper)
     
         
-        # create countours
+        # Создание контуров
+        
         contours, hierarchy = cv2.findContours(mask.copy(),cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 
         # ПОЛУЧЕНИЕ сведений об местоположений контуров в соотвествие с x,y
@@ -68,7 +67,7 @@ def load(exit, mode):
             print(f'x : {x}, y: {y}')
             return x,y
 
-        # наведение указателя на object
+        # наведение указателя на обьект
         
 
         try:
@@ -76,14 +75,4 @@ def load(exit, mode):
         except Exception:
             print("Not Object")
         else:
-            
-
             mouse_control(x,y)
-
-        
-        '''cv2.drawContours( img, contours, -1 , (0,0,255), 3, cv2.LINE_AA, hierarchy, 1 )
-        cv2.imshow(title, img)
-        if cv2.waitKey(25) & 0xFF == ord("q"):
-            cv2.destroyAllWindows()
-            quit()
-    '''
