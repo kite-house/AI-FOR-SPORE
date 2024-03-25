@@ -4,7 +4,7 @@
 
 > 1.Обнаруживает еду >
 > 2.Движется к ней > 
-> 3.Поедает её >
+> 3.Поедает её 
 
 Полная автоматизация первого этапа, за исключением развития 
 
@@ -13,6 +13,6 @@
 
 > 1.Detects food >
 > 2.Moving towards her >
-> 3.Eats her up >
+> 3.Eats her up 
 
 Full automation of the first stage, except for development
