@@ -1,5 +1,18 @@
 # AI-FOR-SPORE
 
-RUS: Бот для первого этапа игры Spore, обнаруживает еду > движится к ней > ест её. Полная автоматизация первого этапа, за исключением развитвие
+#RUS: Бот для первого этапа игры Spore.
 
-ENG: The bot for the first stage of the game Spore, detects food > moves to it > eat it. Full automation of the first stage, with the exception of development
+> 1.Обнаруживает еду.
+> 2.Движется к ней.
+> 3.Поедает её.
+
+Полная автоматизация первого этапа, за исключением развития 
+
+
+#ENG: A bot for the first stage of the Spore game.
+
+> 1.Detects food.
+> 2.Moving towards her.
+> 3.Eats her up.
+
+Full automation of the first stage, except for development
